@@ -2,5 +2,5 @@
 <br>
 
 ### Manual List:
-1. Git Manuals
+1. Github Manuals
 2. Markdown Manuals

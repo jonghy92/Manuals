@@ -1,2 +1,6 @@
 # Manuals
-get manuals
+<br>
+
+### Manual List:
+1. Git Manuals
+2. Markdown Manuals

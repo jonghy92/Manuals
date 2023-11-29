@@ -26,9 +26,9 @@ __개요:__ <br>
 <br>
 
 3. 가상환경 실행:
-    - .\ [환경이름]\Script\activate
-    - .\venv\Script\activate
-      - 혹은 Script 폴더로 이동해서 `activate.bat` 입력/실행 
+    - .\ [환경이름]\Scripts\activate
+    - .\venv\Scripts\activate
+      - 혹은 Scripts 폴더로 이동 `activate.bat` 입력/실행 
 
 <br>
 

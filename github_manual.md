@@ -178,3 +178,4 @@ main | master 브렌치에 항상 최신 코드를 담게 되는데, 마스터 �
 1. https://youtu.be/lelVripbt2M
 2. https://youtu.be/cwC8t9dno2s
 3. https://hackmd.io/@oW_dDxdsRoSpl0M64Tfg2g/ByfwpNJ-K
+4. https://ittrue.tistory.com/88#:~:text=SSH(Secure%20SHell)%EC%9D%98%20%EC%A4%84%EC%9E%84%EB%A7%90,%EA%B4%80%EB%A0%A8%20%EC%B6%94%EA%B0%80%20%EC%9D%B8%EC%A6%9D%20%EC%A0%9C%EB%8F%84%EC%9D%B4%EB%8B%A4.

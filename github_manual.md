@@ -119,12 +119,12 @@ __Github에서 repository 가져오기:__
 >
 > git clone https://github.com/jonghy92/github-test.git
 
-#### 2. Github에서 내 브렌치 (branch) 만들기
+#### 2. Github에서 새로운 브렌치 (branch) 만들기
 > `git checkout -b 브렌치이름` <br>
 > git checkout -b test-branch
 
 
-#### 3. 내 브렌치에 소스코드 업데이트
+#### 3. 브렌치에 소스코드 업데이트
 > git add.
 >
 > git commit -m "first commit"

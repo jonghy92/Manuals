@@ -133,7 +133,7 @@ __Github에서 repository 가져오기:__
 > git push origin test-branch
 
 
-#### 4. 마스터 브렌치에 소스 가져오기 (pull)
+#### 4. master|main 브렌치에 소스 가져오기 (pull)
 > git pull origin master
 >
 > git pull origin main

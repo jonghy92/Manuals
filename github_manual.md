@@ -143,7 +143,29 @@ __Github에서 repository 가져오기:__
 >
 > git checkout test-branch
 
+<br>
 
+__Note:__
+```
+1.
+main | master 브렌치에 항상 최신 코드를 담게 되는데, 마스터 브렌치 사용자(관리자)는 항시 다른 브렌치에 업데이트를 확인하여 마스터 브렌치에 업데이트 및 관리를 해 주어야 함.  
+
+2.
+마스터 관리자가 브렌치 및 자신의 작업 코드를 업데이트 시:
+    
+    #1. 마스터 자기자신 코드 add:
+        - git add .
+
+    #2. 마스터 자기자신 코드 commit:
+        - git commit -m "first master commit"
+
+    #3. 마스터 코드 및 업데이트한 브랜치 코드 merge:
+        - git pull origin master
+
+
+
+
+```
 
 
 <br>

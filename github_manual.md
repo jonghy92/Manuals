@@ -29,7 +29,7 @@ git push -u origin main
 <br>
 
 ## 처음 github 사용시:
-1. git install (local)
+1. git install - ((https://git-scm.com/download/win))
 2. 회원가입
 3. github에서 repository 초기 구축 
 4. SSH --> id_rsa.pub --> public 키 설정

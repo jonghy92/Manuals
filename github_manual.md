@@ -29,10 +29,11 @@ git push -u origin main
 <br>
 
 ## 처음 github 사용시:
-1. 회원가입
-2. github에서 repository 초기 구축 
-3. SSH --> id_rsa.pub --> public 키 설정
-4. id_rsa 는 --> non-public 키 설정
+1. git install (local)
+2. 회원가입
+3. github에서 repository 초기 구축 
+4. SSH --> id_rsa.pub --> public 키 설정
+5. id_rsa 는 --> non-public 키 설정
 
 
 ### 초기 config 세팅:
@@ -47,7 +48,7 @@ git push -u origin main
 <br>
 
 __비고:__ <br>
-github을 처음 사용하면 repository를 웹사이트에서 구축하여 주어야 함.
+github을 처음 사용하면 repository를 웹사이트에서 만들어야 함. <br>
 그리고 난 후, 'git remote add' 명령어로 repository 주소를 넣어주어 서로 연결시켜 주어야 remote 작업을 시작할 수 있음.
 
 
@@ -170,12 +171,3 @@ main | master 브렌치에 항상 최신 코드를 담게 되는데, 마스터 �
 
 <br>
 <br>
-
-
-
-
-## ref:
-1. https://youtu.be/lelVripbt2M
-2. https://youtu.be/cwC8t9dno2s
-3. https://hackmd.io/@oW_dDxdsRoSpl0M64Tfg2g/ByfwpNJ-K
-4. https://ittrue.tistory.com/88#:~:text=SSH(Secure%20SHell)%EC%9D%98%20%EC%A4%84%EC%9E%84%EB%A7%90,%EA%B4%80%EB%A0%A8%20%EC%B6%94%EA%B0%80%20%EC%9D%B8%EC%A6%9D%20%EC%A0%9C%EB%8F%84%EC%9D%B4%EB%8B%A4.

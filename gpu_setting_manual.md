@@ -31,7 +31,7 @@ nvidia-smi
 <br>
 
 ## Step 2 : CUDA 드라이버 설치:
-확인된 GPU 모델명을 지원하는 **Nvidia GPU Driver**를 Nvidia 웹으로 이동해서 찾아 설치해주어야 한다. (CUDA Compute Capability 가 3.5인 GPU 카드만 지원한다고 하는데, 요즘 나오는 신형 노트북/PC는 기본적으로 3.5 이상임)
+확인된 GPU 모델명을 지원하는 **Nvidia GPU Driver**를 Nvidia 웹으로 이동해서 찾아 설치해주어야 한다. (CUDA Compute Capability 가 3.5 이상인 GPU 카드만 지원한다고 하는데, 요즘 나오는 신형 노트북/PC는 기본적으로 3.5 이상임)
 
 **Nvidia 드라이버를 설치하기:**
 - https://www.nvidia.com/Download/index.aspx?lang=kr

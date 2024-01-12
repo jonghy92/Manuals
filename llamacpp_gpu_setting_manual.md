@@ -10,17 +10,18 @@ CPU 나 GPU 를 사용하여 LLM모델을 사용 가능한데, 성능이 좋은 
 
 <br>
 
+
 ## Prerequisites:
-- Visual Studio (보라색):
+- **Visual Studio** (보라색):
     -  C++ CMake tools for Windows
     -  C++ core features
     -  Windows 10/11 SDK
   
-- CUDA Toolkit (CMD 명령어로 확인):
+- **CUDA Toolkit** (CMD 명령어로 확인):
     - nvcc --version
     - nvidia-smi
   
-- CUDA_PATH 환경변수 추가되있느지 확인
+- **CUDA_PATH** 환경변수 추가되있느지 확인
 
 <br>
 
@@ -36,7 +37,8 @@ pip install llama-cpp-python --force-reinstall --upgrade --no-cache-dir
 
 마지막 명령어에 **--verbose** 를 추가하면 cuBLAS/CUDA가 제대로 설치/연결됬는지 확인가능하다.
 
-만약 제대로 cuBLAS가 설치중에 세팅되지 않았으면, **"cuBLAS not found"** 라고 에러메세지가 포함될것이고 GPU로 연결이 되지않는 llama-cpp-python이 설치된 것이다.
+만약 제대로 cuBLAS가 설치중에 세팅되지 않았으면, **"cuBLAS not found"** 라고 에러메세지가 포함되는데
+GPU로 연결이 되지않는 llama-cpp-python이 설치된 것이다.
 
 이런경우에는 CUDA Toolkit이 환경변수에 제대로 잡혀있는지 확인하고 uninstall 후 다시 재설치 해주면 된다.
 

@@ -104,6 +104,7 @@ C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\extras
 C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include
 ```
 
+
 <br>
 
 ## Step 6 : Pytorch GPU 동작 확인
@@ -123,6 +124,31 @@ torch.cuda.is_available()
 torch.__version__
 ```
 상위 명령어를 통해 버전 및 컴퓨터의 GPU를 제대로 읽어오는지 확인하면 최종 마무리가 완료된다.
+
+
+<br>
+
+## 비고 :
+GPU를 사용한 후에 **전용 GPU 메모리(VRAM)** 를 비워줄때가 필요하다. 학습/예측이 끝났음에도 불구하고 만약 메모리가 계속 할당되어있다면 다른작업을 할 시 당연히 에러가 난다. (혹은 사용후 다른 AI모델을 import 할 때....)
+
+따라서 GPU VRAM을 모니터링 하여 필요시 메모리 초기화를 해주는 파이썬 라이브러리가 있어 사용하면 좋다.
+
+**설치 및 사용법:**
+```python
+# 라이브러리 설치
+pip install numba
+```
+
+```python
+# library import
+from numba import cuda
+
+# GPU VRAM Clear (메모리 비우기)
+device = cuda.get_current_device()
+device.reset()
+```
+
+
 
 
 

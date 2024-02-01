@@ -6,7 +6,7 @@
 
 CPU 나 GPU 를 사용하여 LLM모델을 사용 가능한데, 성능이 좋은 GPU가 컴퓨터에 내장되어 있다면, 당연히 GPU를 사용하여 응답받는 (text gen) 속도를 대폭 상승시킬 수 있다. 
 
-따라서 llama-cpp-python을 GPU에 연결하여 **윈도우11** 컴퓨터에서 사용하는 방법에 대해 설명한다. (Nvidia GPU - CUDA 설치/연결에 관해서는 이미 해결된 상태라 여기고 설명한다.)
+따라서 llama-cpp-python을 GPU에 연결하여 **윈도우11** 컴퓨터에서 사용하는 방법에 대해 설명한다. (Nvidia GPU - CUDA 설치/연결에 관해서는 이미 해결된 상태라 여기고 설명한다)
 
 <br>
 
@@ -61,3 +61,29 @@ print(output)
 ```
 
 GPU가 정상적으로 잘 작동되고 있다면 출력되는 변수 중 **BLAS=1** 이라고 표기된 것을 볼 수 있을것이다. ~~만약 제대로 작동되지 않는다면 BLAS=0~~
+
+<br>
+
+
+## 비고:
+Langchain 라이브러리에서도 Llama_cpp를 import 하여 사용할 수 있다.
+
+```python
+# libraries
+from langchain.llms import LlamaCpp
+from langchain.callbacks.streaming_stdout import StreamingStdOutCallbackHandler
+from langchain.callbacks.manager import CallbackManager
+
+# create llm via langchain llama cpp
+callback_manager = CallbackManager([StreamingStdOutCallbackHandler()])
+llm = LlamaCpp(model_path="./models/모델명",
+               temperature = 0.3,  # 창의성 : 0~1 : 0일수록 진부한 답변을 줌
+               n_gpu_layers = 30,
+               n_ctx=2048, 
+               n_batch = 512,
+               max_tokens = 2000,
+               top_p = 1,
+               callback_manager=callback_manager,
+               verbose=False,
+               )
+```
